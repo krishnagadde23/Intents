@@ -9,13 +9,27 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/spinner_array">
+    </Spinner>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GO TO SECOND ACTIVITY"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@android:color/holo_red_light"
         android:id="@+id/btn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/passed"/>
 </RelativeLayout>
